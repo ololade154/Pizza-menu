@@ -1,6 +1,7 @@
-import Nav from './components/Nav';
-import Side from './components/Side';
-import Pizza from './components/Pizza';
+import Header from './components/Header';
+import Menu from './components/Menu';
+import Footer from './components/Footer';
+import './index.css';
 
 const pizzaData = [
   {
@@ -49,10 +50,10 @@ const pizzaData = [
 
 function App() {
   return (
-    <div className="App">
-      <Nav> </Nav>
-      <Side></Side>
-      <Pizza></Pizza>
+    <div className="container">
+      <Header></Header>
+      <Menu></Menu>
+      <Footer></Footer>
     </div>
   );
 }
