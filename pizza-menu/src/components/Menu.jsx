@@ -1,14 +1,14 @@
 import Pizza from './Pizza';
-function Menu() {
+function Menu({ pizzaData }) {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
-      <Pizza></Pizza>
+
+      <div>
+        {pizzaData.map((pizza) => (
+          <Pizza pizza={pizza} />
+        ))}
+      </div>
     </main>
   );
 }

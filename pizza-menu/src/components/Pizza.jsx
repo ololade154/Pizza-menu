@@ -1,9 +1,8 @@
-function Pizza() {
+function Pizza({ pizza }) {
   return (
     <div>
-      <img src="/images/margherita.jpg" alt="Pizza Margherita" />
-      <h3>Pizza Margherita</h3>
-      <p>Tomato and mozarella</p>
+      <img src="{pizza.photoName}" alt="" />
+      <h3>{pizza.name}</h3>
     </div>
   );
 }
